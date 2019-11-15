@@ -610,6 +610,16 @@ video {
   }
 }
 
+.side-upper {
+  max-height: 90%;
+  min-height: 90%;
+}
+
+.side-bottom {
+  max-height: 10%;
+  min-height: 10%;
+}
+
 .sr-only {
   position: absolute;
   width: 1px;

@@ -18,7 +18,8 @@
     "eject": "react-scripts eject",
     "build:styles": "postcss src/css/tailwind.css -o src/css/styles.css",
     "prebuild": "NODE_ENV=production npm run build:styles",
-    "prestart": "npm run build:styles"
+    "prestart": "npm run build:styles",
+    "watch": "postcss src/css/tailwind.css -o src/css/styles.css --watch"
   },
   "eslintConfig": {
     "extends": "react-app"
