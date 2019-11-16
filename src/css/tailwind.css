@@ -2,13 +2,15 @@
 @tailwind components;
 
 .aside-container {
-  max-height: 88vh;
-  min-height: 88vh;
+  max-height: 90vh;
+  min-height: 90vh;
+  height: 90vh;
 }
 
 .player-container {
-  max-height: 12vh;
-  min-height: 12vh;
+  max-height: 10vh;
+  min-height: 10vh;
+  height: 10vh;
 }
 
 .side-upper {
