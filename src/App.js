@@ -9,10 +9,10 @@ function App() {
     <>
       <div className='max-w-full w-full h-screen overflow-hidden'>
         <div className='flex flex-wrap h-full w-full aside-container'>
-          <aside className='h-full w-1/4 lg:w-1/6 bg-gray-900 text-gray-200'>
+          <aside className='h-full w-1/4 xl:w-1/6 bg-gray-900 text-gray-200'>
             <Sidebar></Sidebar>
           </aside>
-          <main className='flex flex-col h-full w-3/4 lg:w-5/6 bg-gray-800 text-gray-200'>
+          <main className='flex flex-col h-full w-3/4 xl:w-5/6 bg-gray-800 text-gray-200'>
             <Header></Header>
             <Content></Content>
           </main>
