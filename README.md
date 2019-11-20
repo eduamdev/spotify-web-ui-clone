@@ -1,6 +1,8 @@
-# Spotify desktop app Clone
+# Spotify desktop app clone (web version)
 
-This is a web app clone of the Spotify Desktop App (home UI only at the moment). I'm planning to add some functionality soon...
+Web clone of the Spotify desktop app (only home UI at the moment). I'm planning to add some functionality soon ...
+
+![Spotify clone screenshot](./src/images/spotify-clone-ss3.png)
 
 ## Built With
 
