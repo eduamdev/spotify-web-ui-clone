@@ -2,38 +2,24 @@
   "name": "spotify-clone-tailwind",
   "version": "0.1.0",
   "private": true,
-  "dependencies": {
-    "@fullhuman/postcss-purgecss": "^1.3.0",
-    "autoprefixer": "^9.7.1",
-    "postcss-cli": "^6.1.3",
-    "react": "^16.11.0",
-    "react-dom": "^16.11.0",
-    "react-scripts": "3.2.0",
-    "tailwindcss": "^1.1.3"
-  },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "build:styles": "postcss src/css/tailwind.css -o src/css/styles.css",
-    "prebuild": "NODE_ENV=production npm run build:styles",
-    "prestart": "npm run build:styles",
-    "watch": "postcss src/css/tailwind.css -o src/css/styles.css --watch"
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
   },
-  "eslintConfig": {
-    "extends": "react-app"
+  "dependencies": {
+    "class-variance-authority": "^0.4.0",
+    "clsx": "^1.2.1",
+    "lucide-react": "^0.115.0",
+    "next": "^13.2.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "tailwind-merge": "^1.10.0",
+    "tailwindcss-animate": "^1.0.5"
   },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
+  "devDependencies": {
+    "autoprefixer": "^10.4.13",
+    "postcss": "^8.4.21",
+    "tailwindcss": "^3.2.7"
   }
 }
