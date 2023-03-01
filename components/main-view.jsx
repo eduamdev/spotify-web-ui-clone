@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { ScrollArea } from "@/components/ui/scroll-area";
 import { Card } from "@/components/card";
 import { Icons } from "@/components/icons";
@@ -112,6 +112,7 @@ export function MainView() {
                   <Card
                     key={item.id}
                     id={item.id}
+                    image={item.image}
                     title={item.title}
                     text={item.text}
                   />
