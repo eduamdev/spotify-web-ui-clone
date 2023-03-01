@@ -62,14 +62,16 @@ export function MainView() {
                   <AvatarImage src="https://github.com/edroamz.png" />
                   <AvatarFallback>EA</AvatarFallback>
                 </Avatar>
-                <span className="font-semibold text-white leading-none">
+                <span className="hidden lg:block font-semibold text-white leading-none">
                   edroamz
                 </span>
-                {open ? (
-                  <Icons.caretUp className="h-4 w-4 text-white mr-1" />
-                ) : (
-                  <Icons.caretDown className="h-4 w-4 text-white mr-1" />
-                )}
+                <span className="hidden lg:block">
+                  {open ? (
+                    <Icons.caretUp className="h-4 w-4 text-white mr-1" />
+                  ) : (
+                    <Icons.caretDown className="h-4 w-4 text-white mr-1" />
+                  )}
+                </span>
               </div>
             </DropdownMenuTrigger>
             <DropdownMenuContent
@@ -107,7 +109,7 @@ export function MainView() {
                   Show all
                 </Button>
               </div>
-              <div className="mt-6 overflow-hidden grid grid-cols-6 items-stretch justify-start gap-x-6">
+              <div className="mt-6 grid grid-cols-[repeat(auto-fit,minmax(180px,_1fr))] overflow-hidden grid-rows-[1fr_0_0_0_0_0] items-stretch justify-start gap-x-6">
                 {data.section.content.map((item) => (
                   <Card key={item.id} title={item.title} text={item.text} />
                 ))}

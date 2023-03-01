@@ -10,9 +10,9 @@ import { Slider } from "@/components/ui/slider";
 
 export function MediaPlayer() {
   return (
-    <div className="grid grid-cols-3 items-center justify-center bg-[#181818] border-t border-stone-600/30 px-4">
-      <div className="flex flex-row items-center gap-x-4">
-        <div className="group/coverArt relative h-[56px] w-[56px] bg-gradient-to-br from-violet-800 to-teal-500 rounded-sm">
+    <div className="min-w-[760px] w-full flex flex-1 flex-row items-center justify-between bg-[#181818] border-t border-stone-600/30 px-4 overflow-hidden">
+      <div className="w-[30%] flex flex-row items-center justify-start gap-x-3">
+        <div className="group/coverArt relative h-[56px] w-[56px] shrink-0 bg-gradient-to-br from-violet-800 to-teal-500 rounded-sm">
           <TooltipProvider>
             <Tooltip>
               <TooltipTrigger asChild>
@@ -25,7 +25,7 @@ export function MediaPlayer() {
           </TooltipProvider>
         </div>
         <div className="flex flex-col items-start justify-center gap-y-[3px]">
-          <p className="text-white font-semibold text-sm">
+          <p className="text-white max-w-[100px] truncate lg:max-w-none font-semibold text-[13px] lg:text-sm">
             Never Gonna Give You Up
           </p>
           <p className="text-xs text-stone-400">Rick Astley</p>
@@ -33,7 +33,7 @@ export function MediaPlayer() {
         <TooltipProvider>
           <Tooltip>
             <TooltipTrigger asChild>
-              <Button variant="ghost" size="sm" className="ml-2">
+              <Button variant="ghost" size="sm">
                 <Icons.heart className="h-4 w-4 text-green-500" />
               </Button>
             </TooltipTrigger>
@@ -41,8 +41,8 @@ export function MediaPlayer() {
           </Tooltip>
         </TooltipProvider>
       </div>
-      <div className="flex flex-col items-center justify-center gap-y-3">
-        <div className="flex items-center justify-center gap-x-3">
+      <div className="w-[40%] flex flex-col items-center justify-center gap-y-2 max-w-[722px]">
+        <div className="flex items-center justify-center gap-x-2 lg:gap-x-3">
           <TooltipProvider>
             <Tooltip>
               <TooltipTrigger asChild>
@@ -94,11 +94,11 @@ export function MediaPlayer() {
             </Tooltip>
           </TooltipProvider>
         </div>
-        <div className="w-full flex flex-row items-center justify-center gap-x-3">
+        <div className="w-full flex flex-row items-center justify-center gap-x-2">
           <span className="text-xs tracking-wider font-semibold text-stone-400">
             0:00
           </span>
-          <div className="max-w-md w-full">
+          <div className="max-w-[200px] lg:max-w-md w-full">
             <Slider defaultValue={[0]} max={100} step={1} />
           </div>
           <span className="text-xs tracking-wider font-semibold text-stone-400">
@@ -106,8 +106,8 @@ export function MediaPlayer() {
           </span>
         </div>
       </div>
-      <div className="flex flex-row items-center justify-end">
-        <div className="flex flex-row items-center justify-center gap-x-1">
+      <div className="w-[30%] flex flex-row items-center justify-end">
+        <div className="flex flex-row items-center justify-center gap-x-0 lg:gap-x-1">
           <TooltipProvider>
             <Tooltip>
               <TooltipTrigger asChild>
@@ -148,7 +148,7 @@ export function MediaPlayer() {
               <TooltipContent>Mute</TooltipContent>
             </Tooltip>
           </TooltipProvider>
-          <div className="w-24">
+          <div className="w-16 lg:w-24">
             <Slider defaultValue={[70]} max={100} step={1} />
           </div>
           <TooltipProvider>
