@@ -9,7 +9,9 @@ export function Card({ title, text }) {
         </div>
       </div>
       <div className="mt-4 space-y-1">
-        <p className="font-semibold text-white">{title}</p>
+        <p className="font-semibold text-white truncate" title={title}>
+          {title}
+        </p>
         <p className="font-semibold text-stone-400 text-sm line-clamp-2">
           {text}
         </p>
