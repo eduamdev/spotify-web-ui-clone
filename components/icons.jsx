@@ -244,4 +244,16 @@ export const Icons = {
       <path d="M14 10 8 4l-6 6h12z"></path>
     </svg>
   ),
+  caretRight: (props) => (
+    <svg
+      role="img"
+      fill="currentColor"
+      aria-hidden="true"
+      viewBox="0 0 16 16"
+      style={{ transform: "rotate(90deg)" }}
+      {...props}
+    >
+      <path d="M14 10 8 4l-6 6h12z"></path>
+    </svg>
+  ),
 };

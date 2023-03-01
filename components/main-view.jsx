@@ -18,8 +18,6 @@ import {
 } from "@/components/ui/dropdown-menu";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 
-import { cn } from "@/lib/utils";
-
 import { mainViewData } from "@/data/main-view";
 
 export function MainView() {
@@ -111,7 +109,12 @@ export function MainView() {
               </div>
               <div className="mt-6 grid grid-cols-[repeat(auto-fit,minmax(180px,_1fr))] overflow-hidden grid-rows-[1fr_0_0_0_0_0] items-stretch justify-start gap-x-6">
                 {data.section.content.map((item) => (
-                  <Card key={item.id} title={item.title} text={item.text} />
+                  <Card
+                    key={item.id}
+                    id={item.id}
+                    title={item.title}
+                    text={item.text}
+                  />
                 ))}
               </div>
             </section>
