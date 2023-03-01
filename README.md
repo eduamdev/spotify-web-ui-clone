@@ -1,10 +1,7 @@
-# Spotify desktop app clone (web version)
-
-I'm planning to add functionality soon ...
-
-![Spotify clone screenshot](./src/images/spotify-clone-ss3.png)
+# Spotify clone (web version)
 
 ## Built With
 
-- [React](https://reactjs.org/docs/create-a-new-react-app.html) - Front-End Toolchain
+- [Next.js](https://nextjs.org/) - React Framework
 - [TailwindCSS](https://tailwindcss.com/) - CSS Framework
+- [Radix UI](https://www.radix-ui.com/docs/primitives/overview/introduction) + [shadcn/ui](https://ui.shadcn.com/docs) - Re-usable components

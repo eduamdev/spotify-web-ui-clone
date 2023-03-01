@@ -1,5 +1,5 @@
 {
-  "name": "spotify-clone-tailwind",
+  "name": "spotify-clone-tailwindcss",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -9,7 +9,9 @@
   },
   "dependencies": {
     "@radix-ui/react-avatar": "^1.0.1",
+    "@radix-ui/react-dropdown-menu": "^2.0.3",
     "@radix-ui/react-scroll-area": "^1.0.2",
+    "@radix-ui/react-slider": "^1.1.0",
     "@radix-ui/react-tooltip": "^1.0.4",
     "class-variance-authority": "^0.4.0",
     "clsx": "^1.2.1",
@@ -21,6 +23,7 @@
     "tailwindcss-animate": "^1.0.5"
   },
   "devDependencies": {
+    "@tailwindcss/line-clamp": "^0.4.2",
     "autoprefixer": "^10.4.13",
     "postcss": "^8.4.21",
     "tailwindcss": "^3.2.7"
