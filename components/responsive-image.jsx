@@ -1,5 +1,5 @@
 import { AspectRatio } from "@/components/ui/aspect-ratio";
-import Image, { ImageProps } from "next/image";
+import Image from "next/image";
 
 import { cn } from "@/lib/utils";
 
@@ -20,9 +20,9 @@ export function ResponsiveImage({
     >
       <AspectRatio ratio={ratio}>
         <Image
+          className={cn("object-cover", className)}
           alt={alt}
           fill
-          className={cn("object-cover", className)}
           priority={priority}
           {...props}
         />

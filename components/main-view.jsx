@@ -77,9 +77,16 @@ export function MainView() {
               sideOffset={10}
               className="w-48 shadow-[rgba(0,_0,_0,_0.3)_0px_16px_24px_0px,_rgba(0,_0,_0,_0.2)_0px_6px_8px_0px]"
             >
-              <DropdownMenuItem className="flex flex-row items-center justify-between">
-                <span>Account</span>
-                <Icons.externalLink className="h-4 w-4" />
+              <DropdownMenuItem className="p-0">
+                <a
+                  href="https://github.com/edroamz"
+                  className="flex flex-row items-center w-full justify-between py-2.5 px-3"
+                  target="_blank"
+                  rel="noopener"
+                >
+                  <span>Account</span>
+                  <Icons.externalLink className="h-4 w-4" />
+                </a>
               </DropdownMenuItem>
               <DropdownMenuItem>Profile</DropdownMenuItem>
               <DropdownMenuItem className="flex flex-row items-center justify-between">
