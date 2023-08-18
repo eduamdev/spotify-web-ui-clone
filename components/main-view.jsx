@@ -19,6 +19,7 @@ import {
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 
 import { mainViewData } from "@/data/main-view";
+import { siteConfig } from "@/config/site";
 
 export function MainView() {
   const [open, setOpen] = useState(false);
@@ -57,11 +58,11 @@ export function MainView() {
                   <span className="relative inline-flex h-3 w-3 rounded-full bg-sky-500"></span>
                 </span>
                 <Avatar className="h-7 w-7 shrink-0">
-                  <AvatarImage src="https://github.com/edroamz.png" />
+                  <AvatarImage src={`${siteConfig.links.github.url}.png`} />
                   <AvatarFallback>EA</AvatarFallback>
                 </Avatar>
                 <span className="hidden lg:block font-semibold text-white leading-none">
-                  edroamz
+                  {siteConfig.username}
                 </span>
                 <span className="hidden lg:block">
                   {open ? (
@@ -79,7 +80,7 @@ export function MainView() {
             >
               <DropdownMenuItem className="p-0">
                 <a
-                  href="https://github.com/edroamz"
+                  href={siteConfig.links.github.url}
                   className="flex flex-row items-center w-full justify-between py-2.5 px-3"
                   target="_blank"
                   rel="noopener"
