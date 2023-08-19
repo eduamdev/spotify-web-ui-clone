@@ -16,8 +16,8 @@ export function MediaPlayer() {
           <TooltipProvider>
             <Tooltip>
               <TooltipTrigger asChild>
-                <Button className="hidden group-hover/coverArt:block absolute right-1 top-1 h-7 w-7 p-3 rounded-full dark:bg-black/80">
-                  <Icons.chevronUp className="absolute inset-0 m-auto h-4 w-4 text-white" />
+                <Button className="hidden group-hover/coverArt:block absolute right-1 top-1 h-7 w-7 p-3 rounded-full ">
+                  <Icons.chevronUp className="absolute inset-0 m-auto h-4 w-4" />
                 </Button>
               </TooltipTrigger>
               <TooltipContent>Expand</TooltipContent>
@@ -66,7 +66,7 @@ export function MediaPlayer() {
           <TooltipProvider>
             <Tooltip>
               <TooltipTrigger asChild>
-                <Button className="mx-2 bg-white h-8 w-8 p-1 dark:hover:bg-white rounded-full">
+                <Button className="mx-2 h-8 w-8 p-1 bg-white hover:bg-white rounded-full">
                   <Icons.play className="h-4 w-4 text-black"></Icons.play>
                 </Button>
               </TooltipTrigger>

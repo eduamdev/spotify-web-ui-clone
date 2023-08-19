@@ -32,7 +32,7 @@ export function MainView() {
             <TooltipProvider>
               <Tooltip>
                 <TooltipTrigger asChild>
-                  <Button className="inline-block relative h-8 w-8 p-3 rounded-full dark:bg-black/80 dark:hover:bg-black/80">
+                  <Button className="inline-block relative h-8 w-8 p-3 rounded-full bg-black/80 hover:bg-black/80">
                     <Icons.chevronLeft className="absolute inset-0 m-auto h-4 w-4 text-white" />
                   </Button>
                 </TooltipTrigger>
@@ -42,7 +42,7 @@ export function MainView() {
             <TooltipProvider>
               <Tooltip>
                 <TooltipTrigger asChild>
-                  <Button className="inline-block relative h-8 w-8 p-3 rounded-full dark:bg-black/80 dark:hover:bg-black/80">
+                  <Button className="inline-block relative h-8 w-8 p-3 rounded-full bg-black/80 hover:bg-black/80">
                     <Icons.chevronRight className="absolute inset-0 m-auto h-4 w-4 text-white" />
                   </Button>
                 </TooltipTrigger>
@@ -52,10 +52,10 @@ export function MainView() {
           </div>
           <DropdownMenu open={open} onOpenChange={setOpen}>
             <DropdownMenuTrigger className="rounded-full">
-              <div className="relative transition-all flex flex-row items-center justify-center gap-x-2 bg-black p-[2px] rounded-full dark:hover:bg-stone-700/70">
+              <div className="relative transition-all flex flex-row items-center justify-center gap-x-2 bg-black p-[2px] rounded-full hover:bg-stone-700/70">
                 <span className="absolute flex h-5 w-5 animate-bounce items-center justify-center -right-2 top-0 z-10">
-                  <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-sky-400 opacity-75"></span>
-                  <span className="relative inline-flex h-3 w-3 rounded-full bg-sky-500"></span>
+                  <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-green-400 opacity-75"></span>
+                  <span className="relative inline-flex h-3 w-3 rounded-full bg-green-500"></span>
                 </span>
                 <Avatar className="h-7 w-7 shrink-0">
                   <AvatarImage src={`${siteConfig.links.github.url}.png`} />
