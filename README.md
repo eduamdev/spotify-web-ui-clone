@@ -1,6 +1,6 @@
 # Spotify Web UI (clone)
 
-![spotify-web-ui-clone](https://user-images.githubusercontent.com/35645733/222291670-1285014b-0769-4b4c-b861-913b328cf558.png)
+![spotify-web-ui](https://github.com/shadcn-ui/taxonomy/assets/35645733/1f90e1c7-f388-4bb4-8398-af1c4a4a1141)
 
 - [Next.js](https://nextjs.org/) - React Framework
 - [TailwindCSS](https://tailwindcss.com/) - Styling
